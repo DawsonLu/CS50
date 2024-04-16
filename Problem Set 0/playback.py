@@ -7,7 +7,7 @@ user for input and then outputs that same input, replacing each space with ...
 """
 
 
-# Function to replace space with '...'T
+# Function to replace space with '...'
 def replaceSpace(input):
     return input.replace(' ', '...')
 
