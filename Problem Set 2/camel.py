@@ -6,6 +6,10 @@ case. Assume that the user’s input will indeed be in camel case.
 
 if __name__ == "__main__":
     get_input = input("camelCase: ").strip()
+    
+    if not get_input.isidentifier():
+        raise Exception("Invalid input given: not a valid identifier")
+    
     char_list = []
     
     for c in get_input:
